@@ -28,3 +28,13 @@
 .custom-dropdown .dropdown-item:hover {
     background-color: #444 !important; /* Cinza escuro para hover */
 }
+
+
+
+.form-floating label {
+    color: white !important;
+}
+.modal-header{
+    color: white !important;
+
+}

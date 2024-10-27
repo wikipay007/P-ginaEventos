@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #1B1B1B !important;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" style="background-color: #1B1B1B !important;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="img/Instagram post - 3.png" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -32,12 +32,12 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Dropdown link
+                            Entrar
                         </a>
                         <ul class="dropdown-menu custom-dropdown">
-                            <li><a class="dropdown-item text-white" href="#">Action</a></li>
-                            <li><a class="dropdown-item text-white" href="#">Another action</a></li>
-                            <li><a class="dropdown-item text-white" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item text-white" href="#" data-bs-toggle="modal" data-bs-target="#modalSignin">Login</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Dashboard</a></li>
+                            <li><a class="dropdown-item text-white" href="#">Plano</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -45,18 +45,59 @@
         </div>
     </nav>
 
+    <!-- Modal -->
+<div class="modal fade" id="modalSignin" tabindex="-1" role="dialog" aria-labelledby="modalSigninLabel" aria-hidden="true" data-bs-theme="dark">
+    <div class="modal-dialog"  role="document">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header p-5 pb-4 border-bottom-0">
+          <h1 class="fw-bold mb-0 fs-2 ">Sign up for free</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-5 pt-0">
+          <form>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput text-white">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword" style="color: #ffffff;">Password</label>
+            </div>
+            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+            <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+            <hr class="my-4">
+            <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+              Sign up with Twitter
+            </button>
+            <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+              Sign up with Facebook
+            </button>
+            <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+              Sign up with GitHub
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    
+
+
 
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <video autoplay="true" muted src="img/eventUs logo.mp4" class="d-block w-100"></video>
+           <div class="carousel-item active">
+            <img src="img/banner arriá.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="img/cyber monday.png" class="d-block w-100" alt="...">
             </div>
-            <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-            </div>
+            <!--<div class="carousel-item">
+                <img src="img/cyber monday.png" class="d-block w-100" alt="...">
+            </div> -->
+            
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
             data-bs-slide="prev">
@@ -69,12 +110,6 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-
-    <span class="badge text-bg-primary">Primary</span>
-    <span class="badge text-bg-info">Info</span>
-
-
-
 
 
 
