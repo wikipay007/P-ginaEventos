@@ -2,136 +2,216 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" style="background-color: #1B1B1B !important;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="img/Instagram post - 3.png" alt="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Eventos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Preços</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Entrar
-                        </a>
-                        <ul class="dropdown-menu custom-dropdown">
-                            <li><a class="dropdown-item text-white" href="#" data-bs-toggle="modal" data-bs-target="#modalSignin">Login</a></li>
-                            <li><a class="dropdown-item text-white" href="#">Dashboard</a></li>
-                            <li><a class="dropdown-item text-white" href="#">Plano</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" style="background-color: #1B1B1B !important;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/Instagram post - 3.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Eventos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Preços</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Entrar
+            </a>
+            <ul class="dropdown-menu custom-dropdown">
+              <li><a class="dropdown-item text-white" href="#" data-bs-toggle="modal"
+                  data-bs-target="#modalSignin">Login</a></li>
+              <li><a class="dropdown-item text-white" href="#">Dashboard</a></li>
+              <li><a class="dropdown-item text-white" href="#">Plano</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Modal -->
-<div class="modal fade" id="modalSignin" tabindex="-1" role="dialog" aria-labelledby="modalSigninLabel" aria-hidden="true" data-bs-theme="dark">
-    <div class="modal-dialog"  role="document">
+  <!-- Modal -->
+  <div class="modal fade" id="modalSignin" tabindex="-1" role="dialog" aria-labelledby="modalSigninLabel"
+    aria-hidden="true" data-bs-theme="dark">
+    <div class="modal-dialog" role="document">
       <div class="modal-content rounded-4 shadow">
         <div class="modal-header p-5 pb-4 border-bottom-0">
-          <h1 class="fw-bold mb-0 fs-2 ">Sign up for free</h1>
+          <h1 class="fw-bold mb-0 fs-2 ">Entre ou cadastre-se</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body p-5 pt-0">
           <form>
             <div class="form-floating mb-3">
               <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
-              <label for="floatingInput text-white">Email address</label>
+              <label for="floatingInput text-white">Email</label>
             </div>
             <div class="form-floating mb-3">
               <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
-              <label for="floatingPassword text-white">Password</label>
+              <label for="floatingPassword text-white">Senha</label>
             </div>
-            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
-            <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Entrar</button>
+            <small class="text-body-secondary">Clicando em entrar você aceita os termos de uso</small>
             <hr class="my-4">
             <h2 class="fs-5 fw-bold mb-3" style="color: #ffffff;">Or use a third-party</h2>
             <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
-              Sign up with Twitter
+              Entrar com Twitter
             </button>
             <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
-              Sign up with Facebook
+              Entrar com Facebook
             </button>
             <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
-              Sign up with GitHub
+              Entrar com GitHub
             </button>
           </form>
         </div>
       </div>
     </div>
   </div>
-  
-    
 
 
 
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-           <div class="carousel-item active">
-            <img src="img/banner arriá.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="img/cyber monday.png" class="d-block w-100" alt="...">
-            </div>
-            <!--<div class="carousel-item">
+
+
+  <div id="carouselExampleAutoplaying" class="carousel slide img-fluid mx-auto" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/banner EventUs.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/banner arriá.png" class="d-block w-100" alt="...">
+      </div>
+      <!--<div class="carousel-item">
                 <img src="img/cyber monday.png" class="d-block w-100" alt="...">
             </div> -->
-            
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
-    <div class="container-fluid d-flex flex-column mb-3">
+  <h2>Vantagens de usar eventUs</h2>
+  
 
- <ul class="nav nav-pills mb-3 mt-0 d-flex justify-content-center" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Experiências musícais</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Celebrações e festivais</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Insights e Networking</button>
-        </li>
-      </ul>
-      <div class="tab-content container-sm" id="pills-tabContent">
-        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">Descubra os shows incríveis que estão chegando à sua cidade. Desde grandes festivais a apresentações intimistas, a eventUs traz a você as melhores experiências musicais.</div>
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">Venha viver a alegria dos festivais. Conheça os eventos que celebram a cultura, a música e a arte em sua comunidade.</div>
-        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">Descubra conferências que trazem especialistas de diversos setores. Aprenda, conecte-se e expanda sua rede profissional.</div>
+  <div class="container-fluid d-flex flex-column mb-3">
+
+    <ul class="nav nav-pills mb-3 mt-0 d-flex justify-content-center" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+          type="button" role="tab" aria-controls="pills-home" aria-selected="true">Organize agora</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+          type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Coordene sua equipe</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link " id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+          type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Divulgação e Marketing</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link " id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-analitics"
+          type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Analytics e Resultados</button>
+      </li>
+    </ul>
+    <div class="tab-content container-sm d-flex justify-content-center" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+        tabindex="0">
+        <div class="cont-eventos">
+          <div class="row featurette">
+            <div class="col-md-7">
+              <div>
+                 <h2 class="featurette-heading fw-normal lh-1">Organização sem complicação.<span class="text-body-secondary"> A EventUs vai transformar seu evento!</span></h2>
+              <p class="lead">Comece seu evento do zero! A EventUs ajuda você a definir datas, locais e todos os detalhes com
+              facilidade e precisão, centralizando tudo em um só lugar.</p>
+            </div>
+              </div>
+             
+            <div class="col-md-5">
+              <img class="img-fluid mx-auto" src="img/Business Plan-amico.svg" alt="">
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+        <div class="cont-eventos">
+          <div class="row featurette">
+            <div class="col-md-7">
+              <div>
+                 <h2 class="featurette-heading fw-normal lh-1">Coordene sua equipe com facilidade.<span class="text-body-secondary"> Com a EventUs, todos estão na mesma página.</span></h2>
+              <p class="lead">Gerencie sua equipe de produção, fornecedores e voluntários em tempo real, permitindo comunicação rápida e atribuição de tarefas para garantir que tudo esteja no lugar certo.</p>
+            </div>
+              </div>
+             
+            <div class="col-md-5">
+              <img class="img-fluid mx-auto" src="img/At the office-amico.svg" alt="">
+            </div>
+          </div>
+        </div>
       </div>
 
+
+      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+        <div class="cont-eventos">
+          <div class="row featurette">
+          <div class="col-md-7">
+            <div>
+               <h2 class="featurette-heading fw-normal lh-1">Maximize a visibilidade do seu evento.<span class="text-body-secondary"> A EventUs impulsiona a sua divulgação.</span></h2>
+            <p class="lead">Aumente a visibilidade do seu evento com ferramentas integradas de marketing e parcerias para promoção. Alcance mais pessoas e garanta o sucesso do seu evento com um alcance maior.</p>
+          </div>
+            </div>
+           
+          <div class="col-md-5">
+            <img class="img-fluid mx-auto" src="img/Mobile Marketing-pana.svg" alt="">
+          </div>
+        </div>
+        </div>
+      </div>
+
+
+      <div class="tab-pane fade" id="pills-analitics" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+        <div class="cont-eventos">
+          <div class="row featurette">
+            <div class="col-md-7">
+              <div>
+                 <h2 class="featurette-heading fw-normal lh-1">Acompanhe o sucesso em tempo real<span class="text-body-secondary"> Com a EventUs, você tem dados e insights para cada decisão.</span></h2>
+              <p class="lead">Monitore o desempenho do evento com relatórios detalhados, de engajamento até a satisfação dos participantes, ajudando você a melhorar em cada nova edição.</p>
+            </div>
+              </div>
+             
+            <div class="col-md-5">
+              <img class="img-fluid mx-auto" src="img/Business analytics-amico.svg" alt="">
+            </div>
+          </div>
+      </div>
     </div>
-   
+
+  </div>
+
+  
 
 
 
@@ -144,17 +224,18 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="app.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
 </body>
 
 </html>
