@@ -116,6 +116,34 @@
 .disclaimer h2{
     font-family: "Inter Tight", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 800;
     font-style: normal;
+}
+.logoGradiente{
+    background: linear-gradient(180deg, rgba(195,146,52,1) 5%, rgba(181,43,70,1) 16%, rgba(188,61,169,1) 26%, rgba(210,250,33,1) 97%);
+  -webkit-background-clip: text; /* Para webkit browsers */
+  -webkit-text-fill-color: transparent; /* Para webkit browsers */
+}
+
+.carrosselMobile{
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .carrosselDesktop {
+        display: none;
+    }
+    .carrosselMobile {
+        display: block;
+        height: auto; /* Mantém a altura automática para o carrossel mobile */
+    }
+    .carousel-item {
+        width: 100%; /* Permite que a largura se ajuste ao contêiner */
+        height: auto; /* Mantém a altura automática */
+    }
+    .carousel-item img {
+        width: 100%;
+        height: auto; /* Mantém a proporção da imagem */
+        object-fit: contain; /* Garante que a imagem não seja cortada */
+    }
 }
