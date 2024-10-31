@@ -128,8 +128,21 @@
 .carrosselMobile{
     display: none;
 }
+.navbar-toggler{
+    background-color: #51E837;
+}
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
+    .navbar-brand img {
+        color: white !important;
+        width: 100% !important;
+        object-fit: cover !important;
+    
+    }
+    .navbar-brand{
+        width: 20%;
+    
+    }
     .carrosselDesktop {
         display: none;
     }
@@ -145,5 +158,16 @@
         width: 100%;
         height: auto; /* Mantém a proporção da imagem */
         object-fit: contain; /* Garante que a imagem não seja cortada */
+    }
+    .cont-eventos{
+        width: 90%;
+        display: flex;
+        justify-content:center;
+        margin: auto;
+        gap: 10px;
+        text-align: justify;
+    }
+    .col-md-7, .col-md-5{
+        width: 90%;
     }
 }
