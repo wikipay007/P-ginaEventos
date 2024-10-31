@@ -120,9 +120,13 @@
     font-style: normal;
 }
 .logoGradiente{
+    background: #51E837;
+    -webkit-background-clip: text; /* Para webkit browsers */
+  -webkit-text-fill-color: transparent; /*  Para webkit browsers */
+
+    /*
     background: linear-gradient(180deg, rgba(195,146,52,1) 5%, rgba(181,43,70,1) 16%, rgba(188,61,169,1) 26%, rgba(210,250,33,1) 97%);
-  -webkit-background-clip: text; /* Para webkit browsers */
-  -webkit-text-fill-color: transparent; /* Para webkit browsers */
+  */
 }
 
 .carrosselMobile{
@@ -140,7 +144,7 @@
     
     }
     .navbar-brand{
-        width: 20%;
+        width: 30%;
     
     }
     .carrosselDesktop {
@@ -159,15 +163,34 @@
         height: auto; /* Mantém a proporção da imagem */
         object-fit: contain; /* Garante que a imagem não seja cortada */
     }
-    .cont-eventos{
+    .cont-eventos {
         width: 90%;
         display: flex;
-        justify-content:center;
+        justify-content: space-between;
+        align-items: center;
         margin: auto;
-        gap: 10px;
-        text-align: justify;
+        gap: 20px;
+        /* text-align: justify; */
     }
-    .col-md-7, .col-md-5{
-        width: 90%;
+    .col-md-5{
+        width: 100%;
+        margin-left: 10%;
     }
+    .col-md-7{
+        width: 100%;
+        text-align: initial;
+    }
+    .row {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        /* flex-wrap: wrap; */
+        width: 50%;
 }
+    .featurette-heading{
+        font-size: x-large;
+    }
+    .featurette-heading .lead p{
+        font-size: x-small;
+    }
