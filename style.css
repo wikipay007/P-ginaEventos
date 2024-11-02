@@ -43,6 +43,10 @@
 
 }
 
+.linkCadastro{
+    text-decoration: underline;
+}
+
 .text-white-custom {
     color: white !important;
 }
@@ -51,7 +55,7 @@
   }
 
   .nav-pills .nav-link.active, .nav-pills .show .nav-link button{
-    background-color: #1B1B1B !important;
+    background-color: #51E837 !important;
   }
   .nav-pills .nav-link{
     color: black !important;
@@ -68,23 +72,7 @@
     gap: 10px;
     text-align: justify;
 }
-.esquerda{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.esquerda img{
-    width: 100%;
-    object-fit: cover;
-}
-.direita{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    text-align: justify;
-}
+
 .col-md-7{
     display: flex;
     justify-content: center;
@@ -134,6 +122,10 @@
 }
 .navbar-toggler{
     background-color: #51E837;
+}
+.text-body-secondary{
+    color: #51E837 !important;
+    font-weight: 600;
 }
 
 @media (max-width: 1000px) {
