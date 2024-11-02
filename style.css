@@ -163,34 +163,8 @@
         height: auto; /* Mantém a proporção da imagem */
         object-fit: contain; /* Garante que a imagem não seja cortada */
     }
-    .cont-eventos {
-        width: 90%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: auto;
-        gap: 20px;
-        /* text-align: justify; */
-    }
-    .col-md-5{
-        width: 100%;
-        margin-left: 10%;
-    }
-    .col-md-7{
-        width: 100%;
+    .cont-eventos{
         text-align: initial;
+        margin-top: 20px !important;
     }
-    .row {
-        --bs-gutter-x: 1.5rem;
-        --bs-gutter-y: 0;
-        display: flex;
-        flex-wrap: nowrap;
-        /* flex-wrap: wrap; */
-        width: 50%;
 }
-    .featurette-heading{
-        font-size: x-large;
-    }
-    .featurette-heading .lead p{
-        font-size: x-small;
-    }
