@@ -4,6 +4,10 @@
     font-family: "Inter Tight", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  color: aliceblue !important;
+}
+body{
+    background-color: #1B1B1B;
 }
 .navbar-brand img {
     color: white !important;
@@ -55,10 +59,10 @@
   }
 
   .nav-pills .nav-link.active, .nav-pills .show .nav-link button{
-    background-color: #51E837 !important;
+    background-color: #444 !important;
   }
   .nav-pills .nav-link{
-    color: black !important;
+    color: aliceblue !important;
   }
 .nav-link.active{
     color: white !important;
@@ -70,7 +74,6 @@
     justify-content:center;
     margin: auto;
     gap: 10px;
-    text-align: justify;
 }
 
 .col-md-7{
