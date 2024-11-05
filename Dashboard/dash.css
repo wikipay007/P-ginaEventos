@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* BASE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --dark-grey: #1A1A1A;
+    --bright-green: #04E762;
+    --white: #FFFFFF;
+    --main-gradient: background-image: linear-gradient(to bottom, #04e762, #00e675, #00e485, #00e293, #16e0a0);
+    --second-gradient: background-image: linear-gradient(to bottom, #06d65c, #00d26c, #00cf79, #00ca84, #17c68e);
+}
+
+/* HEADER STYLES */
+.navbar-brand img {
+    color: white !important;
+    width: 100% !important;
+    object-fit: cover !important;
+
+}
+.navbar-brand{
+    width: 10%;
+
+}
+.navbar{
+    color: white !important;
+}
+
+.d-inline-block img{
+        width: 100%;
+        object-fit: cover ;
+}
+.custom-dropdown {
+    background-color: #1B1B1B !important;
+}
+.custom-dropdown .dropdown-item {
+    color: white !important;
+}
+.custom-dropdown .dropdown-item:hover {
+    background-color: #444 !important; /* Cinza escuro para hover */
+}
+
+
+
+.form-floating label {
+    color: white !important;
+}
+.modal-header{
+    color: white !important;
+
+}
+
+.linkCadastro{
+    text-decoration: underline;
+}
+
+.text-white-custom {
+    color: white !important;
+}
+.mt-0 {
+    margin-top: 20px!important;
+  }
+
+  .nav-pills .nav-link.active, .nav-pills .show .nav-link button{
+    background-color: #444 !important;
+  }
+  .nav-pills .nav-link{
+    color: aliceblue !important;
+  }
+.nav-link.active{
+    color: white !important;
+  }
+
+/* DASHBOARD */
+.dash-container{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.dash-container h1{
+    margin-bottom: 8px;
+    color: #109c3c;
+    cursor: default;
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+}
+.dash-container p{
+    width: 70%;
+    margin-bottom: 28px;
+    color: rgb(76, 75, 75);
+    cursor: default;
+    text-align: center;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 40px;
+}
+.menu .item{
+    margin: 0 30px;
+    padding: 8px;
+    width: 30%;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.85);
+    background-image: linear-gradient(to bottom, #04e762, #00e675, #00e485, #00e293, #16e0a0);
+    transition: all .5s;
+    cursor: pointer;
+}
+.menu .item:hover{
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
+.graph-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.col-1{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+.left{
+    background-color: white;
+    width: 40%;
+    height: 100%;
+    padding: 4px;
+}
+.right{
+    width: 60%;
+    height: 100%;
+    margin: 10px;
+    margin: 0 50px;
+}
+
+/* FORMATANDO OS GRÁFICOS EM LEFT E RIGHT */
+.left canvas, .right canvas{
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.75);
+    border-radius: 9px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.right .percentage{
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.75);
+    border-radius: 9px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 40px;
+    font-size: 40px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    cursor: pointer;
+}
+.right .percentage .highlight{
+    color: var(--bright-green);
+    font-weight: 700;
+}
+
+.left canvas{
+    width: 100% !important;
+    height: 50% !important;
+    padding: 8px !important;
+}
+.right canvas{
+    width: 100% !important;
+    height: 50% !important;
+}
+
+
+
+
+.col-2{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.col-2 .card{
+    height: 80%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #04e762, #00e675, #00e485, #00e293, #16e0a0);
+    border-radius: 9px;
+    box-shadow: 8px 4px 12px rgba(0, 0, 0, 0.45);
+    padding: 8px;
+}
+.col-2 .card .photo{
+    margin-top: 28px;
+    height: 140px;
+    width: 140px;
+    background-image: url(https://pbs.twimg.com/profile_images/1638293944357335041/yVq0ibLA_400x400.jpg);
+    background-size: cover;
+    border-radius: 100%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.col-2 .card .dash-name{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+}
+.col-2 .card .dash-job{
+    font-size: 24px;
+    margin-bottom: 28px;
+    color: var(--dark-grey);
+}
+.col-2 .card .card-menu{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+}
+.col-2 .card .card-menu .card-item{
+    padding: 8px;
+}
+.col-2 .card .card-menu .card-item{
+    background-color: white;
+    padding: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all .5s;
+}
+.col-2 .card .card-menu .card-item:hover{
+    transform: scale(1.1);
+    padding: 8px;
+    cursor: pointer;
+    color: black;
+    transition: all .5s;
+}
+
+.col-2 .card .card-menu .card-item i{
+    font-size: 28px;
+    color: var(--dark-grey);
+}
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 1219px) { /* LARGURA MÁXIMA DE ATÉ O TABLET */
+    .dash-container{
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu{
+        width: 100%;
+    }
+    .graph-container{
+        width: 100%;
+    }
+    .col-1{
+        width: 60%;
+    }
+    .left{
+        width: 40%;
+    }
+    .right{
+        width: 60%;
+        margin: 0 10px;
+    }
+    .right .percentage{
+        width: 100%;
+        padding: 20px;
+        font-size: 20px;
+    }
+    .col-2{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    canvas{
+        width: 100%;
+        height: 100%;
+    }
+    .card{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .dash-name{
+        font-size: 20px !important;
+    }
+    .dash-job{
+        font-size: 16px !important;
+    }
+    .card-menu{
+        display: flex;
+        justify-content: space-between;
+    }
+    .card-item{
+        padding: 2px !important;
+    }
+  }
+
+  @media (max-width: 480px) { /* LARGURA MÁXIMA DE ATÉ O CELULAR */
+    
+    .navbar-brand img {
+        color: white !important;
+        width: 100% !important;
+        object-fit: cover !important;
+    
+    }
+    .navbar-toggler-icon{
+        background-color: #51E837;
+    }
+    .navbar-brand{
+        width: 30%;
+    
+    }
+    .carrosselDesktop {
+        display: none;
+    }
+    .carrosselMobile {
+        display: block;
+        height: auto; /* Mantém a altura automática para o carrossel mobile */
+    }
+    .carousel-item {
+        width: 100%; /* Permite que a largura se ajuste ao contêiner */
+        height: auto; /* Mantém a altura automática */
+    }
+    .carousel-item img {
+        width: 100%;
+        height: auto; /* Mantém a proporção da imagem */
+        object-fit: contain; /* Garante que a imagem não seja cortada */
+    }
+    .cont-eventos{
+        text-align: initial;
+        margin-top: 20px !important;
+    }
+    
+    .dash-container{
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .menu .item{
+        margin: 0 10px;
+        padding: 8px;
+        width: 30%;
+        text-align: center;
+        border-radius: 6px;
+        box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.85);
+        background-color: var(--bright-green);
+        transition: all .5s;
+        cursor: pointer;
+    }
+
+    .graph-container{
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    .col-1{
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+        align-items: center;
+    }
+    .col-2{
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+        align-items: center;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+    canvas{
+        width: 100% !important;
+        height: 100% !important;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+  }

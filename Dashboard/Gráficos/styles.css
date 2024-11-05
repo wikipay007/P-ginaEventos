@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4; /* Cor de fundo */
+}
+
+h1 {
+    margin: 20px;
+    color: #333; /* Cor do texto */
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.chart-container {
+    width: 40%;
+    margin: 20px;
+    max-width: 600px;
+}
+
+/* Estilos dos gráficos */
+canvas {
+    background-color: #fff; /* Cor do fundo do gráfico */
+    border: 1px solid #ccc; /* Cor da borda do gráfico */
+    padding: 12px;
+}
