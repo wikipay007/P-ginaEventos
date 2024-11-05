@@ -1,0 +1,27 @@
+.navbar-brand img {
+    color: white !important;
+    width: 100% !important;
+    object-fit: cover !important;
+
+}
+.navbar-brand{
+    width: 10%;
+
+}
+.navbar{
+    color: white !important;
+}
+
+.d-inline-block img{
+        width: 100%;
+        object-fit: cover ;
+}
+.custom-dropdown {
+    background-color: #1B1B1B !important;
+}
+.custom-dropdown .dropdown-item {
+    color: white !important;
+}
+.custom-dropdown .dropdown-item:hover {
+    background-color: #444 !important; /* Cinza escuro para hover */
+}
