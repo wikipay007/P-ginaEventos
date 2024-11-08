@@ -110,15 +110,6 @@ body{
     font-weight: 800;
     font-style: normal;
 }
-.logoGradiente{
-    background: #51E837;
-    -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; /*  Para webkit browsers */
-
-    /*
-    background: linear-gradient(180deg, rgba(195,146,52,1) 5%, rgba(181,43,70,1) 16%, rgba(188,61,169,1) 26%, rgba(210,250,33,1) 97%);
-  */
-}
 
 .carrosselMobile{
     display: none;
