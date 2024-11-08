@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Inter Tight", sans-serif;
+}
+
+
+.center {
+   width: 80%;
+   margin: 10% auto;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+
+.cards {
+   display: flex;
+   margin: 10% auto;
+   width: 80%;
+   justify-content: space-between;
+}
+
+.cards a {
+   display: flex;
+   flex-direction: column;
+   margin: 0 8px 8px;
+   text-decoration: none;
+   padding: 8px;
+   color: #fff;
+}
+
+.cards a:hover {
+   transition: 0.3s;
+   transform: scale(1.02);
+}
+
+.cards a .button1 {
+   color: #fff;
+   border-radius: 8px;
+   padding: 4px;
+   background: linear-gradient(135deg, #000, #c6cacd 80%);
+   /* Gradiente inicial */
+   background-size: 200% 200%;
+   /* Permite o movimento do gradiente */
+   transition: background-position 0.4s ease;
+}
+
+.cards a .button1:hover{
+   color: #000;
+   background-position: -100% 0; /* Move o gradiente para a esquerda */
+}
+.cards a .button2 {
+   color: #fff;
+   border-radius: 8px;
+   padding: 4px;
+   background: linear-gradient(135deg, #000, #f28b0c 80%);
+   /* Gradiente inicial */
+   background-size: 200% 200%;
+   /* Permite o movimento do gradiente */
+   transition: background-position 0.4s ease;
+}
+
+.cards a .button2:hover{
+   color: #000;
+   background-position: -100% 0; /* Move o gradiente para a esquerda */
+}
+.cards a .button3 {
+   color: #fff;
+   border-radius: 8px;
+   padding: 4px;
+   background: linear-gradient(135deg, #000, #51E837 80%);
+   /* Gradiente inicial */
+   background-size: 200% 200%;
+   /* Permite o movimento do gradiente */
+   transition: background-position 0.4s ease;
+}
+
+.cards a .button3:hover{
+   color: #000;
+   background-position: -100% 0; /* Move o gradiente para a esquerda */
+}
+
+.card {
+   box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.6);
+   color: white !important;
+}
+
+.card h6 {
+   color: white !important;
+}
+
+.card:hover {
+   transition: 0.3s;
+   transform: scale(1.03);
+   box-shadow: 3px 3px 2px 1px rgba(0, 0, 0, 0.8);
+}
+
+.card-text {
+   font-size: 12px;
+   border-bottom: 1px solid black;
+}
+
+.card-text strong {
+   font-size: 14px;
+}
+
+/* Animação para mover o fundo */
+@keyframes moveBackground {
+   0% {
+      background-position: 0% 50%;
+   }
+
+   100% {
+      background-position: 100% 50%;
+   }
+}
+
+.card1 {
+   background: linear-gradient(135deg, #c6cacd, #000 80%);
+   /* Gradiente de cores */
+   background-size: 200% 200%;
+   /* Aumenta o tamanho do gradiente para dar espaço para o movimento */
+   transition: background-position 0.3s ease;
+   /* Suaviza o início do hover */
+}
+
+.card1 .card-text {
+   margin: 32px 0;
+}
+
+.card1:hover {
+   animation: moveBackground 3s infinite alternate;
+   /* Alterna o movimento do fundo no hover */
+}
+
+.card2 {
+   background: linear-gradient(135deg, #f28b0c, #000 80%);
+   /* Gradiente de cores */
+   background-size: 200% 200%;
+   /* Aumenta o tamanho do gradiente para dar espaço para o movimento */
+   transition: background-position 0.3s ease;
+   /* Suaviza o início do hover */
+}
+
+.card2 .card-text {
+   margin: 32px 0;
+}
+
+.card2:hover {
+   animation: moveBackground 3s infinite alternate;
+   /* Alterna o movimento do fundo no hover */
+}
+
+.card3 {
+   background: linear-gradient(135deg, #51E837, #000);
+   /* Gradiente de cores */
+   background-size: 200% 200%;
+   /* Aumenta o tamanho do gradiente para dar espaço para o movimento */
+   transition: background-position 0.3s ease;
+   /* Suaviza o início do hover */
+}
+
+.card3:hover {
+   animation: moveBackground 3s infinite alternate;
+   /* Alterna o movimento do fundo no hover */
+}
+
+@media (max-width: 1140px){
+   .cards{
+      margin: auto !important;
+      width: 60% !important;
+      font-size: small !important;
+      display: flex;
+      gap: 5%;
+   }
+
+   .card-text{
+      font-size: 10px;
+   }
+
+   .card-text strong{
+      font-size: 11px;
+   }
+}
+
+@media(max-width: 900px) {
+   .cards{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+      width: 80%;
+      gap: 24px;
+   }
+
+   .card-text{
+      font-size: 12px;
+   }
+
+   .card-text strong{
+      font-size: 14px;
+   }
+}
