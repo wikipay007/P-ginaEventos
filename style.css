@@ -112,6 +112,7 @@ body{
 }
 .logoGradiente{
     background: #51E837;
+    -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; /*  Para webkit browsers */
 
     /*
