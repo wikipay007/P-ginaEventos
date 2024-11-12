@@ -25,3 +25,19 @@
 .custom-dropdown .dropdown-item:hover {
     background-color: #444 !important; /* Cinza escuro para hover */
 }
+.navbar-toggler{
+    background-color: #51E837 !important;
+}
+
+@media (max-width: 1000px) {
+    .navbar-brand img {
+        color: white !important;
+        width: 100% !important;
+        object-fit: cover !important;
+    
+    }
+    .navbar-brand{
+        width: 30%;
+    
+    }
+}

@@ -322,8 +322,8 @@
         object-fit: cover !important;
     
     }
-    .navbar-toggler-icon{
-        background-color: #51E837;
+    .navbar-toggler{
+        background-color: #51E837 !important;
     }
     .navbar-brand{
         width: 30%;
@@ -408,3 +408,4 @@
         padding: 20px;
     }
   }
+  
