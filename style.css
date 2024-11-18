@@ -5,7 +5,6 @@
   font-optical-sizing: auto;
   font-style: normal;
   color: aliceblue !important;
-  overflow-x: hidden;
 }
 body{
     background-color: #1B1B1B;
@@ -124,6 +123,9 @@ body{
 }
 
 @media (max-width: 1000px) {
+    *{
+        overflow-x: hidden;
+    }
     .navbar-brand img {
         color: white !important;
         width: 100% !important;
