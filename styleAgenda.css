@@ -33,6 +33,12 @@ header nav a {
     text-decoration: none;
 }
 
+header img {
+    max-width: 150px; /* Controla o tamanho máximo da imagem */
+    height: auto; /* Mantém a proporção */
+    object-fit: contain; /* Ajusta ao tamanho do container */
+}
+
 main {
     display: flex;
     margin-top: 40px;
@@ -101,7 +107,7 @@ main {
     border-radius: 5px;
 }
 
-.calendar .event-icon{
+.calendar .event-icon {
     color: #51E837;
 }
 
@@ -146,70 +152,83 @@ main {
     margin-top: 10px;
 }
 
-
-@media (max-width: 650px){
-    .calendar{
+@media (max-width: 650px) {
+    .calendar {
         width: 80%;
         margin: 0 auto;
     }
 
-    .calendar .days span{
+    .calendar .days span {
         padding: 5px;
         display: flex;
         justify-content: space-evenly;
     }
 
-    main{
+    main {
         display: flex;
         flex-direction: column-reverse;
     }
 
-    .eventos{
+    .eventos {
         width: 80%;
         margin: 0 auto;
         border-bottom: 3px solid #51E837;
         border-left: none;
         text-align: left;
     }
-
 }
 
 @media (max-width: 450px) {
-
-    header{
-        width: 100%;
-        font-size: 12px;
-    }
-
-    header img{
-        width: 60px;
-        height: 20px;
-    }
-
-    .calendar{
+    .calendar {
         width: 80%;
         margin: 0 auto;
     }
 
-    .calendar .days span{
+    .calendar .days span {
         padding: 5px;
         display: flex;
         justify-content: space-evenly;
     }
 
-    main{
+    main {
         display: flex;
         flex-direction: column-reverse;
     }
 
-    .eventos{
+    .eventos {
         width: 80%;
         margin: 0 auto;
         border-bottom: 3px solid #51E837;
         border-left: none;
         text-align: left;
     }
+}
+.navbar-brand img {
+    color: white !important;
+    width: 100% !important;
+    object-fit: cover !important;
 
+}
+.navbar-brand{
+    width: 10%;
+
+}
+.navbar{
+    color: white !important;
+}
+
+.d-inline-block img{
+        width: 100%;
+        object-fit: cover ;
+}
+.custom-dropdown {
+    background-color: #1B1B1B !important;
+}
+.custom-dropdown .dropdown-item {
+    color: white !important;
+}
+.custom-dropdown .dropdown-item:hover {
+    background-color: #444 !important; /* Cinza escuro para hover */
 }
 .navbar-toggler{
     background-color: #51E837 !important;
