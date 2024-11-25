@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilização básica */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1B1B1B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    margin: 0;
+  }
+  
+  .container {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    background-color: #212529;
+    color: white;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  p {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 14px;
+  }
+  
+  .btn-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    margin: 0 5px;
+  }
+  
+  .btn-selecionado {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  button:not(.btn-selecionado) {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+  }
+  
+  
+  
+ 
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Classe para esconder formulário */
+  .oculto {
+    display: none;
+  }
+
+.botao {
+    width: 100%;
+    padding: 12px;
+    background-color: #1b63e8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.botao:hover {
+    background-color: #1867df;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+img {
+    width: 110px;
+    margin-top: 70px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+
+.input-item {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.input-item label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.input-item input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
